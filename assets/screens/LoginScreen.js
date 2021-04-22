@@ -47,6 +47,7 @@ function LoginScreen(props) {
                 />
                 <SubmitButton title='Login'/>
             </AppForm>
+            <AppText>NB: We have to implement Login with fingerprint</AppText>
         </Screen>
     );
 }
