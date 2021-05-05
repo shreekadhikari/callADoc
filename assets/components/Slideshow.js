@@ -3,6 +3,7 @@ import { FlatList, View, StyleSheet, Animated } from 'react-native';
 import slides from '../slides';
 import Sliderpaginator from './Sliderpaginator';
 import SlideshowItems from './SlideshowItems';
+//import * as Animatable from 'react-native-animatable';
 
 function Slideshow(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
