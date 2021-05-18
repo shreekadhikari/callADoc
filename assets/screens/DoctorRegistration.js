@@ -20,8 +20,8 @@ const validationSchema = Yup.object().shape({
 
 function DoctorRegistration(props) {
   return (
-    <Screen style={{ padding: 10 }}>
-      <ScrollView>
+    <Screen style={{marginTop: 5}}>
+      <ScrollView style={styles.body}>
         <View style={styles.top}>
           <Image source={require("../userImage.png")} style={styles.image} />
         </View>
@@ -45,7 +45,7 @@ function DoctorRegistration(props) {
             <AppFormField
               autoCapitalize="none"
               autoCorrect={false}
-              icon="user"
+              icon="account"
               keyboardType="email-address"
               name="firstName"
               placeholder="First name"
@@ -54,7 +54,7 @@ function DoctorRegistration(props) {
             <AppFormField
               autoCapitalize="none"
               autoCorrect={false}
-              icon="user"
+              icon="account"
               keyboardType="email-address"
               name="familyName"
               placeholder="Surname"
@@ -99,7 +99,7 @@ function DoctorRegistration(props) {
             <AppFormField
               autoCapitalize="none"
               autoCorrect={false}
-              icon="user"
+              icon="card"
               keyboardType="email-address"
               name="doctorLiscenceNo"
               placeholder="Liscence No"
@@ -108,7 +108,7 @@ function DoctorRegistration(props) {
             <AppFormField
               autoCapitalize="none"
               autoCorrect={false}
-              icon="user"
+              icon="account"
               keyboardType="email-address"
               name="speciality"
               placeholder="Speciality"
@@ -118,13 +118,13 @@ function DoctorRegistration(props) {
             <AppFormField
               autoCapitalize="none"
               autoCorrect={false}
-              icon="user"
+              icon="home"
               keyboardType="email-address"
               name="location"
               placeholder="Location"
               textContentType="familyName"
             />
-            <SubmitButton title="Sign Up" />
+            <SubmitButton title="Sign Up" style={styles.button} />
           </AppForm>
         </View>
       </ScrollView>
@@ -134,23 +134,19 @@ function DoctorRegistration(props) {
 
 const styles = StyleSheet.create({
   image: {
-    width: 80,
-    height: 80,
+    width: 100,
+    height: 100,
     alignSelf: "center",
-    marginTop: 50,
-    marginBottom: 20,
+    marginTop: 30,
+  },
+  body:{
+     padding: 40 
   },
   container: {
-    //padding:5,
-    height: "80%",
-    marginVertical: 10,
-    //flex:8,
-    flexDirection: "column",
-    justifyContent: "space-around",
-    alignItems: "flex-start",
-  },
+    marginBottom: 50,
+    },
   top: {
-    height: "20%",
+    height: 150,
   },
 });
 

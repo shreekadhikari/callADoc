@@ -15,10 +15,10 @@ const validationSchema = Yup.object().shape({
   phonenumber: Yup.string().required().label("Phone Number"),
 });
 
-function UserRegistration(props) {
+function PatientRegistration(props) {
   return (
-    <Screen style={{ padding: 10 }}>
-      <ScrollView>
+    <Screen style={{ marginTop: 5 }}>
+      <ScrollView style={styles.body}>
         <View style={styles.top}>
           <Image source={require("../userImage.png")} style={styles.image} />
         </View>
@@ -100,23 +100,20 @@ function UserRegistration(props) {
 
 const styles = StyleSheet.create({
   image: {
-    width: 80,
-    height: 80,
+    width: 100,
+    height: 100,
     alignSelf: "center",
-    marginTop: 10,
-    marginBottom: 10,
+    marginTop: 30,
+  },
+  body: {
+    padding: 40,
   },
   container: {
-    //padding:5,
-    height: "80%",
-    marginVertical: 0,
-    flexDirection: "column",
-    justifyContent: "space-around",
-    alignItems: "flex-start",
+    marginBottom: 50,
   },
   top: {
-    height: "15%",
+    height: 150,
   },
 });
 
-export default UserRegistration;
+export default PatientRegistration;
