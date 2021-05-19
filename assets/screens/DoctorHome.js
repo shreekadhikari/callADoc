@@ -19,12 +19,12 @@ const listings = [
   {
     id: 1,
     image: require("../doctor.png"),
-    text: "See a Doctor",
+    text: "Your Appointments",
   },
   {
     id: 2,
     image: require("../hospital.png"),
-    text: "Hospital",
+    text: "Patient record",
   },
   {
     id: 3,
@@ -92,8 +92,8 @@ function UserHome(props) {
           source={require("../backgroundImage.jpg")}
           style={styles.image}
         >
-          <Text style={styles.headerText}>Hi user,</Text>
-          <Text style={styles.headerText2}>We've got great Doctors!</Text>
+          <Text style={styles.headerText}>Hi Doc,</Text>
+          <Text style={styles.headerText2}>You've some patients waiting!</Text>
           <View style={styles.searchContainer}>
             <AppTextInput
               placeholder="Search"
