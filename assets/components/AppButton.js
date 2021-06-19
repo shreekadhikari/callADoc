@@ -11,24 +11,23 @@ function AppButton({onPress, title}) {
 }
 
 const styles = StyleSheet.create({
-    button:{
-        width:'100%',
-        height:50,
-        padding:10,
-        marginVertical:10,
-        borderRadius:25,
-        backgroundColor: colors.primary,
-        justifyContent:'center',
-        alignItems:'center', 
-    
-    },
+  button: {
+    width: "100%",
+    height: 50,
+    padding: 10,
+    marginVertical: 10,
+    borderRadius: 25,
+    backgroundColor: colors.primary,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 
-    text:{
-        color:colors.white,
-        fontSize:18,
-        textTransform:'uppercase',
-        fontWeight:'bold'
-    }
-})
+  text: {
+    color: colors.white,
+    fontSize: 16,
+    textTransform: "uppercase",
+    fontWeight: "bold",
+  },
+});
 
 export default AppButton;

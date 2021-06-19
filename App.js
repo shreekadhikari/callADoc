@@ -7,7 +7,8 @@ import DoctorRegistration from "./assets/screens/DoctorRegistration";
 import UserHome from "./assets/screens/UserHome";
 import WelcomeScreen from "./assets/screens/WelcomeScreen";
 import Splash from "./assets/screens/Splash";
+import DoctorDetail from "./assets/screens/DoctorDetail";
 
 export default function App() {
-  return <DoctorRegistration />;
+  return <DoctorDetail />;
 }
